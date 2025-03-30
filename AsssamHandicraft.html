@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam Handicrafts - Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Vintage.</h1>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <div class="container product-detail-section">
+        <div class="product-detail">
+            <!-- Left: Product Images -->
+            <div class="product-images">
+                <img id="Assam" src="Assam Handicrafts.jpg" alt="Assam Handicrafts" class="img-fluid">
+                <div class="image-thumbnails">
+                    <img src="Assam Handicrafts.jpg" alt="Thumbnail 1">
+                    <img src="Assam Handicrafts.jpg" alt="Thumbnail 2">
+                    <img src="Assam Handicrafts.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+
+            <!-- Right: Product Information -->
+            <div class="product-info">
+                <h1 class="product-name">Assam Handicrafts</h1>
+                <p class="product-description">
+                    Colorful & Beautiful,uniquely made Assamese Handicrafts              
+                    <div class="product-price">860.00 INR</div>
+
+                <!-- Features -->
+                <div class="product-features">
+                    <h3>Product Features:</h3>
+                    <ul>
+                        <li>Handmade with high-quality materials</li>
+                        <li>Perfect for decorations</li>
+                        <li>Eco-friendly and durable</li>
+                    </ul>
+                </div>
+
+                <!-- Availability -->
+                <div class="product-availability">
+                    <p><strong>Availability:</strong> In Stock</p>
+                    <p><strong>Shipping:</strong> Free shipping on orders over $50</p>
+                </div>
+
+                <!-- Quantity and Action Buttons -->
+                <div class="product-action">
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    
+                    <!-- Add to Cart and Buy Now Buttons -->
+                    <a href="#" class="buy-btn">Buy Now</a>
+                    <a href="#" class="cart-btn">Add to Cart</a>
+                </div>
+
+                <!-- Back Button -->
+                <a href="index.html" class="btn btn-secondary mt-3">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vintage Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script to handle image thumbnails and switch main image
+        const mainImage = document.getElementById('main-image');
+        const thumbnails = document.querySelectorAll('.image-thumbnails img');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                mainImage.src = this.src;
+            });
+        });
+    </script>
+
+</body>
+</html>
